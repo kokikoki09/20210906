@@ -22,7 +22,16 @@ a {
   color: white;
 }
 
-@media screen and (max-width: 768px){
+.btn:hover {
+  background: rgb(238, 103, 103);
+  color: #fff;
+}
+
+.link:hover {
+  color: rgb(99, 99, 99);
+}
+
+@media screen and (max-width: 768px) {
   .menu {
     display: inline-block;
     width: 36px;
@@ -30,9 +39,9 @@ a {
     cursor: pointer;
     position: relative;
     z-index: 10;
-}
+  }
 
-.menu-line-bottom {
+  .menu-line-bottom {
     display: inline-block;
     width: 100%;
     height: 4px;
@@ -40,9 +49,9 @@ a {
     position: absolute;
     transition: 0.5s;
     bottom: 0;
-}
+  }
 
-.menu-line-top {
+  .menu-line-top {
     top: 0;
     display: inline-block;
     width: 100%;
@@ -51,9 +60,9 @@ a {
     position: absolute;
     transition: 0.5s;
     bottom: 0;
-}
+  }
 
-.menu-line-middle {
+  .menu-line-middle {
     top: 14px;
     display: inline-block;
     width: 100%;
@@ -62,9 +71,9 @@ a {
     position: absolute;
     transition: 0.5s;
     bottom: 0;
-}
+  }
 
-.drawer-nav {
+  .drawer-nav {
     display: block;
     position: absolute;
     height: 100vh;
@@ -72,31 +81,32 @@ a {
     top: 0;
     left: -100%;
     background: black;
-    transition: .7s;
-}
+    transition: 0.7s;
+  }
 
-.drawer-nav-list {
+  .drawer-nav-list {
     padding-top: 80px;
     text-align: center;
-}
+  }
 
-.drawer-nav-item {
+  .drawer-nav-item {
     margin-top: 40px;
     color: #0033cc;
     font-size: 18px;
-}
+  }
 
-.menu.open span:nth-of-type(1) {
-  top: 14px;
-  transform: rotate(45deg);
+  .menu.open span:nth-of-type(1) {
+    top: 14px;
+    transform: rotate(45deg);
+  }
+  .menu.open span:nth-of-type(2) {
+    opacity: 0;
+  }
+  .menu.open span:nth-of-type(3) {
+    top: 14px;
+    transform: rotate(-45deg);
+  }
 }
-.menu.open span:nth-of-type(2) {
-  opacity: 0;
-}
-.menu.open span:nth-of-type(3) {
-  top: 14px;
-  transform: rotate(-45deg);
-}}
 
 .header {
   display: flex;
@@ -217,6 +227,10 @@ img {
   margin: 0px auto;
 }
 
+.section__news__item__link:hover {
+  background-color: rgb(155, 155, 155);
+}
+
 .section__news__ttl {
   display: flex;
   justify-content: space-between;
@@ -296,12 +310,22 @@ img {
   text-align: center;
 }
 
+.section__menu-red:hover {
+  color: #fff;
+  background-color: rgb(238, 103, 103);
+}
+
 .section__menu-grey {
   background-color: rgb(63, 63, 63);
   width: 50%;
   padding: 100px 0;
   font-size: 20px;
   text-align: center;
+}
+
+.section__menu-grey:hover {
+  color: #fff;
+  background-color: rgb(112, 112, 112);
 }
 
 .section__contact {
