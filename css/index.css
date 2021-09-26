@@ -32,15 +32,35 @@ a {
     z-index: 10;
 }
 
+.menu-line-bottom {
+    display: inline-block;
+    width: 100%;
+    height: 4px;
+    background-color: #000;
+    position: absolute;
+    transition: 0.5s;
+    bottom: 0;
+}
+
 .menu-line-top {
     top: 0;
+    display: inline-block;
+    width: 100%;
+    height: 4px;
+    background-color: #000;
+    position: absolute;
+    transition: 0.5s;
+    bottom: 0;
 }
 
 .menu-line-middle {
     top: 14px;
-}
-
-.menu-line-bottom {
+    display: inline-block;
+    width: 100%;
+    height: 4px;
+    background-color: #000;
+    position: absolute;
+    transition: 0.5s;
     bottom: 0;
 }
 
