@@ -22,6 +22,50 @@ a {
   color: white;
 }
 
+@media screen and (max-width: 768px){
+  .menu {
+    display: inline-block;
+    width: 36px;
+    height: 32px;
+    cursor: pointer;
+    position: relative;
+    z-index: 10;
+}
+
+.menu-line-top {
+    top: 0;
+}
+
+.menu-line-middle {
+    top: 14px;
+}
+
+.menu-line-bottom {
+    bottom: 0;
+}
+
+.drawer-nav {
+    display: block;
+    position: absolute;
+    height: 100vh;
+    width: 100%;
+    top: 0;
+    left: -100%;
+    background: black;
+    transition: .7s;
+}
+
+.drawer-nav-list {
+    padding-top: 80px;
+    text-align: center;
+}
+
+.drawer-nav-item {
+    margin-top: 40px;
+    color: #0033cc;
+    font-size: 18px;
+}}
+
 .header {
   display: flex;
   justify-content: space-between;
@@ -46,16 +90,6 @@ li {
   display: inline-block;
   padding: 10px 10px;
   font-size: 15px;
-}
-
-@media screen and (max-width: 768px)
-.menu {
-    display: inline-block;
-    width:: 36px;
-    height: 32px;
-    cursor: pointer;
-    position: relative;
-    z-index: 10;
 }
 
 .mv {
