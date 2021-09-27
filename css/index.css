@@ -31,9 +31,12 @@ a {
   color: rgb(99, 99, 99);
 }
 
-@media screen and (max-width: 768px) {
+.drawer-nav {
+    display: none;
+  }
 
-  .header__nav{
+@media screen and (max-width: 768px) {
+  .header__nav {
     display: none;
   }
 
@@ -112,9 +115,9 @@ a {
     transform: rotate(-45deg);
   }
 
-  .in{
-  transform: translateX(100%);
-}
+  .in {
+    transform: translateX(100%);
+  }
 }
 
 .header {
