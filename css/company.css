@@ -2,11 +2,6 @@
   box-sizing: border-box;
 }
 
-a {
-  color: black;
-  text-decoration: none;
-}
-
 .ptb-m {
   padding: 80px 0;
 }
@@ -27,12 +22,143 @@ a {
   color: white;
 }
 
+* {
+  box-sizing: border-box;
+}
+
+.section__news__item__link{
+  color: black;
+  text-decoration: none;
+}
+
+.link {
+  color: black;
+  text-decoration: none;
+}
+
+.link:hover {
+  color: rgb(99, 99, 99);
+}
+
+.section__menu-color-white {
+  color: #fff;
+}
+
+.btn {
+  margin: 30px auto 0;
+  display: block;
+  width: 300px;
+  text-align: center;
+  font-weight: bold;
+  padding: 10px;
+  background-color: rgb(189, 18, 18);
+  color: white;
+  text-decoration: none;
+}
+
+.btn:hover {
+  background: rgb(238, 103, 103);
+  color: #fff;
+}
+
+.drawer-nav {
+    display: none;
+  }
+
+  .menu{
+    display: none;
+  }
+
+@media screen and (max-width: 768px) {
+  .header__nav {
+    display: none;
+  }
+
+  .menu {
+    display: inline-block;
+    width: 36px;
+    height: 32px;
+    cursor: pointer;
+    position: relative;
+    z-index: 10;
+  }
+
+  .menu-line-bottom {
+    display: inline-block;
+    width: 100%;
+    height: 4px;
+    background-color: #000;
+    position: absolute;
+    transition: 0.5s;
+    bottom: 0;
+  }
+
+  .menu-line-top {
+    top: 0;
+    display: inline-block;
+    width: 100%;
+    height: 4px;
+    background-color: #000;
+    position: absolute;
+    transition: 0.5s;
+    bottom: 0;
+  }
+
+  .menu-line-middle {
+    top: 14px;
+    display: inline-block;
+    width: 100%;
+    height: 4px;
+    background-color: #000;
+    position: absolute;
+    transition: 0.5s;
+    bottom: 0;
+  }
+
+  .drawer-nav {
+    display: block;
+    position: absolute;
+    height: 100vh;
+    width: 100%;
+    top: 0;
+    left: -100%;
+    background: white;
+    transition: 0.7s;
+  }
+
+  .drawer-nav-list {
+    padding-top: 80px;
+    text-align: center;
+  }
+
+  .drawer-nav-item {
+    margin-top: 40px;
+    color: #0033cc;
+    font-size: 18px;
+  }
+
+  .menu.open span:nth-of-type(1) {
+    top: 14px;
+    transform: rotate(45deg);
+  }
+  .menu.open span:nth-of-type(2) {
+    opacity: 0;
+  }
+  .menu.open span:nth-of-type(3) {
+    top: 14px;
+    transform: rotate(-45deg);
+  }
+
+  .in {
+    transform: translateX(100%);
+  }
+}
+
 .header {
   display: flex;
   justify-content: space-between;
   align-items: center;
   height: 70px;
-  padding: 0 30px;
   background-color: #fff;
   position: sticky;
   left: 0;
@@ -49,7 +175,7 @@ a {
 
 .header__tittle__list__item {
   display: inline-block;
-  padding: 10px 10px;
+  padding: 5px 5px;
   font-size: 15px;
 }
 
