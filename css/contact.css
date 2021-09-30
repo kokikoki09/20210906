@@ -46,6 +46,11 @@
   }
 
 @media screen and (max-width: 768px) {
+
+a{
+  text-decoration: none;
+}
+
   .header__nav {
     display: none;
   }
@@ -219,6 +224,17 @@
     cursor: pointer;
 }
 
+.contact-form-item-textarea {
+    font-size: 16px;
+    width: 100%;
+    padding: 5px;
+    border: 1px solid #ccc;
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    resize: none;
+}
+
 .footer {
   padding: 20px 0;
   color: #fff;
@@ -242,13 +258,18 @@
 
 .fooetr-list {
   color: #fff;
-  font-size: 12px;
+  font-size: 5px;
+  text-decoration: none;
+}
+
+.fooetr-list:hover{
+  color: rgb(180, 180, 180);
 }
 
 .footer-nav-item:after {
   content: "|";
   display: inline-block;
-  padding: 0px 10px;
+  padding: 0px 5px;
 }
 
 .footer-nav-item {
