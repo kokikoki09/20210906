@@ -102,6 +102,7 @@
   align-items: center;
   background: url(../img/mv.png) center / cover;
   color: #fff;
+  margin-bottom: 100px;
 }
 
 .mv__top__ttl {
@@ -287,4 +288,22 @@ img {
   width: 100%;
   margin: auto;
   }
+
+  .service-item-depiction{
+    margin: 5px 0px;
+  }
+
+  .footer-copyright{
+    margin: 0px auto;
+  }
+
+  .footer-nav-item {
+    text-align: center;
+    margin-top: 10px;
+    width: 100%;
+  }
+
+  .footer-nav-item:after {
+  display: none;
+}
 }

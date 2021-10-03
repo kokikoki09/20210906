@@ -275,4 +275,18 @@ img {
   .wrap {
     margin: 0 auto;
 }
+
+  .footer-copyright{
+    margin: 0px auto;
+  }
+
+  .footer-nav-item {
+    text-align: center;
+    margin-top: 10px;
+    width: 100%;
+  }
+
+  .footer-nav-item:after {
+  display: none;
+}
 }
